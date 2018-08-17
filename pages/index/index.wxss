@@ -4,14 +4,103 @@
 
     height: 100%;
     box-sizing: border-box;
-    padding: 160rpx 28rpx 28rpx 28rpx;
 }
 .page-hd {
     flex: none;
+    background-color: aqua;
 }
 .page-bd {
     flex: 1;
     min-height: 0;
 
-    margin-top: 32rpx;
+    background-color: azure;
+}
+.page-ft {
+    display: flex;
+    align-items: center;
+
+    flex: none;
+    height: 120rpx;
+    background-color: #ccc;
+}
+
+
+
+.chat-list {
+}
+.chat-list-item {
+    display: flex;
+
+    margin: 20rpx 15rpx 40rpx 15rpx;
+}
+.chat-list-item.other {
+    flex-direction: row;
+}
+.chat-list-item.me {
+    flex-direction: row-reverse;
+}
+.chat-list-item .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    border-radius: 50%;
+
+    background-color: #ccc;
+}
+.chat-user-info {
+    display: flex;
+}
+.chat-list-item.me .chat-user-info {
+    flex-direction: row-reverse;
+}
+.chat-list-item .nickname {
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.chat-message {
+    display: flex;
+    margin: 15rpx 20rpx;
+}
+.chat-list-item.me .chat-message {
+    justify-content: flex-end;
+}
+.chat-message .txt {
+    padding: 15rpx 10rpx;
+
+    background-color: #fff;
+}
+
+
+
+.btn-screen {
+    position: fixed;
+    right: 0;
+    bottom: 150rpx;
+}
+
+
+
+.chat-input {
+    flex: 1;
+    min-width: 0;
+    height: 90rpx;
+    margin: 10rpx 15rpx;
+    border-radius: 12rpx;
+
+    background-color: #fff;
+}
+.chat-input-placeholder {
+    margin-left: 5rpx;
+    line-height: 90rpx;
+}
+.chat-emoji {
+    flex: none;
+
+    margin: 10rpx 15rpx;
+}
+.chat-image {
+    flex: none;
+
+    margin: 10rpx 15rpx;
 }

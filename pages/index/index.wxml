@@ -2,7 +2,41 @@
     <view class="page-hd">
     </view>
     <view class="page-bd">
+        <scroll-view scroll-y="{{true}}" class="chat-list">
+            <view class="chat-list-item other">
+                <view class="col">
+                    <image class="avatar" src="avatar.jpeg" />
+                </view>
+                <view class="col">
+                    <view class="row chat-user-info">
+                        <text class="nickname">猜猜我是谁</text>
+                        <text class="time">08-08 14:25</text>
+                    </view>
+                    <view class="row chat-message">
+                        <view class="txt">哈哈哈哈哈哈哈</view>
+                    </view>
+                </view>
+            </view>
+            <view class="chat-list-item me">
+                <view class="col">
+                    <image class="avatar" src="avatar.jpeg" />
+                </view>
+                <view class="col">
+                    <view class="row chat-user-info">
+                        <text class="nickname">猜猜我是谁</text>
+                        <text class="time">08-08 14:25</text>
+                    </view>
+                    <view class="row chat-message">
+                        <view class="txt">哈哈哈哈哈哈哈</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <button class="btn-screen">屏</button>
     </view>
     <view class="page-ft">
+        <textarea placeholder="说点什么..." placeholder-class="chat-input-placeholder" class="chat-input"></textarea>
+        <button class="chat-emoji">emoji</button>
+        <button class="chat-image">图片</button>
     </view>
 </view>
