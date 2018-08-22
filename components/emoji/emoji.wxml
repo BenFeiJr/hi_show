@@ -1,0 +1,9 @@
+<view class="emoji {{show ? 'show' : ''}}">
+    <scroll-view class="emoji-list-wrapper" scroll-y="{{true}}">
+        <view class="emoji-list" bind:tap="_handleEmojiTap">
+            <view class="emoji-list-item" wx:for="{{_emojiList}}" wx:key="{{item.id}}">
+                <image src="{{item.url}}" lazy-load="{{true}}" data-emoji="{{item.json}}" />
+            </view>
+        </view>
+    </scroll-view>
+</view>
