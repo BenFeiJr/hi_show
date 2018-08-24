@@ -1,0 +1,119 @@
+.order {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.order-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.order-cont {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 88%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    border-radius: 20rpx 20rpx 0 0;
+
+    background-color: #fff;
+}
+
+
+
+.order-cont-hd {
+    display: flex;
+    flex: none;
+}
+.order-cont-bd {
+    flex: 1;
+    min-height: 0;
+}
+.order-cont-ft {
+    flex: none;
+}
+.order-title {
+    display: flex;
+    align-items: center;
+
+    font-size: 38rpx;
+}
+.order-title::before {
+    content: "";
+    display: inline-block;
+    width: 8rpx;
+    height: 38rpx;
+    margin-right: 15rpx;
+    
+    background-color: #ccc;
+}
+.order-btn-question {
+    background: none;
+}
+.order-btn-question::after {
+    border: none;
+}
+.order-tip-warn {
+    padding: 15rpx 20rpx;
+    border: 1px solid #ccc;
+    border-radius: 10rpx;
+
+    font-size: 26rpx;
+}
+.order-btn-uploadImg {
+    position: relative;
+
+    width: 100rpx;
+    height: 100rpx;
+    border: 1px solid #ccc;
+
+    background: none;
+}
+.order-btn-uploadImg > image {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+
+.order-radio {
+    display: inline-block;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.order-radio-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90rpx;
+    height: 90rpx;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    font-size: 30rpx;
+}
+.order-radio-label {
+    font-size: 28rpx;
+    text-align: center;
+}

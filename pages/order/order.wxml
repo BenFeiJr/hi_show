@@ -1,0 +1,61 @@
+<view class="order">
+    <view class="order-bg"></view>
+    <view class="order-cont">
+        <view class="order-cont-hd">
+            <view class="order-title">霸屏</view>
+            <button class="order-btn-question">霸屏遇到问题</button>
+            <button class="order-btn-close">关闭</button>
+        </view>
+        <view class="order-cont-bd">
+            <scroll-view scroll-y="{{true}}" class="order-form">
+                <view class="order-form-item">
+                    <view class="order-form-item-caption"></view>
+                    <view class="order-form-item-control">
+                        <input type="text" placeholder="请输入霸屏内容" />
+                    </view>
+                </view>
+                <view class="order-form-item">
+                    <view class="order-form-item-caption">请选择霸屏时长</view>
+                    <view class="order-form-item-control">
+                        <view class="order-radio">
+                            <view class="order-radio-value">10秒</view>
+                            <view class="order-radio-label">￥8</view>
+                        </view>
+                        <view class="order-radio">
+                            <view class="order-radio-value">10秒</view>
+                            <view class="order-radio-label">￥8</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="order-form-item">
+                    <view class="order-form-item-caption">霸屏主题</view>
+                    <view class="order-form-item-control">
+                        <view class="order-radio">
+                            <view class="order-radio-value">
+                                <image src="" />
+                            </view>
+                            <view class="order-radio-label">默认</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="order-tip-warn">
+                    请勿发布违禁内容，霸屏不支持退款。如霸屏未正常显示，请联系现场主办方处理。
+                </view>
+                <view class="order-form-item">
+                    <view class="order-form-item-caption">
+                        可上传1张图片，霸屏60秒以上可上传3张图片
+                    </view>
+                    <view class="order-form-item-control">
+                        <button class="order-btn-uploadImg">
+                            <image src="./images/image.png" />
+                        </button>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="order-cont-ft">
+            <view>需支付：<text class="order-payMoney-value">8.00</text><text class="order-payMoney-unit">元</text></view>
+            <button class="order-btn-submit">霸屏支付</button>
+        </view>
+    </view>
+</view>
