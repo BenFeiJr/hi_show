@@ -36,7 +36,9 @@
     </view>
     <view class="page-ft">
         <textarea placeholder="说点什么..." placeholder-class="chat-input-placeholder" class="chat-input"></textarea>
-        <button class="chat-emoji">emoji</button>
+        <button class="chat-emoji" bind:tap="handleChatEmojiBtnTap">emoji</button>
+        <emoji bind:emojiTap="handleEmojiTap" show="{{isShowEmoji}}"></emoji>
         <button class="chat-image">图片</button>
     </view>
+    <order></order>
 </view>

@@ -1,3 +1,7 @@
 {
-    "navigationBarTitleText": "Hi现场"
+    "navigationBarTitleText": "Hi现场",
+    "usingComponents": {
+        "emoji": "../../components/emoji/emoji",
+        "order": "../order/order"
+    }
 }
