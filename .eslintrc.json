@@ -21,7 +21,8 @@
       "location": true,
       "wx": true,
       "App": true,
-      "Page": true
+      "Page": true,
+      "Component": true
     },
     "rules": {
       "accessor-pairs": 2,
