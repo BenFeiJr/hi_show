@@ -26,8 +26,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 88%;
-    padding-left: 30rpx;
-    padding-right: 30rpx;
+    padding: 20rpx 30rpx 20rpx 30rpx;
     border-radius: 20rpx 20rpx 0 0;
 
     background-color: #fff;
@@ -37,7 +36,9 @@
 
 .order-cont-hd {
     display: flex;
+    align-items: center;
     flex: none;
+    margin-bottom: 20rpx;
 }
 .order-cont-bd {
     flex: 1;
@@ -46,6 +47,57 @@
 .order-cont-ft {
     flex: none;
 }
+
+
+
+.order-form {
+    height: 100%;
+}
+.order-form-item {
+    margin-bottom: 30rpx;
+}
+.order-form-item-caption {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+
+    font-size: 30rpx;
+    color: #b2b2b2;
+}
+
+
+
+.order-radio {
+    display: inline-block;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.order-radio.checked .order-radio-value {
+    color: orange;
+}
+.order-radio-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90rpx;
+    height: 90rpx;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    font-size: 30rpx;
+}
+.order-radio-value image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.order-radio-label {
+    font-size: 28rpx;
+    text-align: center;
+}
+
+
+
 .order-title {
     display: flex;
     align-items: center;
@@ -62,10 +114,34 @@
     background-color: #ccc;
 }
 .order-btn-question {
+    margin: 0;
+    
+    font-size: 30rpx;
     background: none;
 }
 .order-btn-question::after {
     border: none;
+}
+.order-btn-close {
+    position: relative;
+
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0;
+    margin-left: auto;
+
+    background: none;
+}
+.order-btn-close::after {
+    border: none;
+}
+.order-btn-close image {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
 }
 .order-tip-warn {
     padding: 15rpx 20rpx;
@@ -77,13 +153,46 @@
 .order-btn-uploadImg {
     position: relative;
 
-    width: 100rpx;
-    height: 100rpx;
-    border: 1px solid #ccc;
+    width: 140rpx;
+    height: 140rpx;
+    margin: 0;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
 
     background: none;
 }
+.order-btn-uploadImg::after {
+    border-width: 8rpx;
+    border-style: dashed;
+}
 .order-btn-uploadImg > image {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+    width: 80%;
+    height: 80%;
+
+    object-fit: contain;
+}
+.order-show-image .order-form-item-control {
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-show-image-item {
+    position: relative;
+
+    width: 140rpx;
+    height: 140rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.order-show-image-item image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}
+.order-show-image-item-bg {
     position: absolute;
     left: 0;
     top: 0;
@@ -91,29 +200,78 @@
     width: 100%;
     height: 100%;
 
-    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.3);
 }
+.order-show-image-item-delete {
+    position: absolute;
+    left: 100%;
+    top: 0;
 
+    width: 40rpx;
+    height: 50rpx;
+    margin-left: -20rpx;
+    margin-top: -20rpx;
+    border-radius: 20rpx;
 
-
-.order-radio {
-    display: inline-block;
-    margin-left: 20rpx;
-    margin-right: 20rpx;
+    background: #fff;
 }
-.order-radio-value {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.order-show-image-item-delete::after {
+    border: none;
+}
+.order-show-image-item-delete image {
+    position: absolute;
+    left: 5%;
+    top: 18%;
 
-    width: 90rpx;
-    height: 90rpx;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+.order-show-image-item-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 90%;
+    height: 3em;
+    margin: auto;
+
+    font-size: 20rpx;
+    color: #fff;
+    background: none;
+}
+.order-show-text input {
+    position: relative;
+    left: -10rpx;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5rpx 10rpx;
 
     font-size: 30rpx;
-}
-.order-radio-label {
-    font-size: 28rpx;
     text-align: center;
+    background-color: #ccc;
+}
+.order-show-text-input-placeholder {
+    color: orange;
+}
+.order-btn-submit {
+    color: #fff;
+    background: linear-gradient(to right, rgb(255, 115, 26), rgb(255, 69, 26));
+}
+.order-payMoney-wrapper {
+    margin-bottom: 20rpx;
+
+    font-size: 30rpx;
+    color: #b2b2b2;
+}
+.order-payMoney-value {
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(255, 69, 26);
+}
+.order-payMoney-unit {
+    margin-left: 10rpx;
+    color: rgb(255, 69, 26);
 }

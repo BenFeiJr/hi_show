@@ -80,6 +80,9 @@ const newWx = () => {
         },
         setStorage: (options) => {
             return _getPromise(wx.setStorage, options);
+        },
+        chooseImage: (options) => {
+            return _getPromise(wx.chooseImage, options);
         }
     };
 };
